@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { getLocale } from "@/lib/get-locale";
 import { dict } from "@/lib/i18n";
 
@@ -17,12 +16,6 @@ const FeaturedWork = async () => {
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
                 {t.kicker}
               </p>
-              <Button
-                variant={"outline"}
-                className="h-auto py-3 px-5"
-                nativeButton={false}
-                render={<Link href={"/"}>{t.cta}</Link>}
-              />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 border-t border-border">
