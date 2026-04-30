@@ -1,26 +1,12 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { getLocale } from "@/lib/get-locale";
+import { dict } from "@/lib/i18n";
 
-const FeaturedWork = () => {
-  const [featureWork, setFeatureWork] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("/api/featured-work");
-        if (!res.ok) throw new Error("Failed to fetch");
-        const data = await res.json();
-        setFeatureWork(data?.featureWork);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+const FeaturedWork = async () => {
+  const locale = await getLocale();
+  const t = dict[locale].featuredWork;
 
   return (
     <section>
@@ -29,18 +15,18 @@ const FeaturedWork = () => {
           <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
             <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                Избранные работы
+                {t.kicker}
               </p>
               <Button
                 variant={"outline"}
                 className="h-auto py-3 px-5"
                 nativeButton={false}
-                render={<Link href={"/"}>Скачать портфолио</Link>}
+                render={<Link href={"/"}>{t.cta}</Link>}
               />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 border-t border-border">
-            {featureWork?.map((value: any, index: number) => {
+            {t.items.map((value, index) => {
               const isRightCol = index % 2 === 1;
 
               return (
@@ -50,7 +36,7 @@ const FeaturedWork = () => {
                 >
                   <Link href={"/"} className="overflow-hidden">
                     <Image
-                      src={value?.image}
+                      src={value.image}
                       alt="Image"
                       width={490}
                       height={300}
@@ -59,10 +45,10 @@ const FeaturedWork = () => {
                   </Link>
                   <div className="flex flex-col gap-1 sm:gap-2 px-2">
                     <Link href={"/"}>
-                      <h4>{value?.title}</h4>
+                      <h4>{value.title}</h4>
                     </Link>
                     <div className="flex">
-                      <p>{value?.roles?.join(", ")}</p>
+                      <p>{value.roles.join(", ")}</p>
                     </div>
                   </div>
                 </div>

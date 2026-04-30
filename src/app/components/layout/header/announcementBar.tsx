@@ -1,6 +1,10 @@
 import Image from "next/image"
+import { getLocale } from "@/lib/get-locale"
+import { dict } from "@/lib/i18n"
 
-const AnnouncementBar = () => {
+const AnnouncementBar = async () => {
+    const locale = await getLocale()
+    const t = dict[locale]
     return (
         <div className="fixed top-0 left-0 right-0 z-50">
             <div className="group relative bg-primary overflow-hidden">
@@ -9,7 +13,7 @@ const AnnouncementBar = () => {
                 </div>
                 <div className="relative z-10 container">
                     <div className="py-2.5 flex items-center justify-center gap-2">
-                        <p className="text-sm sm:text-base text-white">Теперь доступно в Figma и в коде — настройте свой личный сайт уже сегодня.</p>
+                        <p className="text-sm sm:text-base text-white">{t.announcement}</p>
                         <Image src={"/images/icon/arrow-icon.svg"} alt="arrow-icon" width={24} height={24} className="group-hover:translate-x-1.5 transition-all duration-500 ease-in-out" />
                     </div>
                 </div>

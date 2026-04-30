@@ -1,19 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import { getLocale } from "@/lib/get-locale";
+import { dict } from "@/lib/i18n";
 
-const AboutMe = () => {
-  const servicesBedge = [
-    "Графический дизайн",
-    "UX-исследования",
-    "Дизайн мобильных приложений",
-    "Бренд-айдентика",
-    "Адаптивный дизайн",
-    "Прототипирование",
-    "Иллюстрация",
-    "Моушн-дизайн",
-    "Печатный дизайн",
-    "UI-разработка",
-    "Интерактивные медиа",
-  ];
+const AboutMe = async () => {
+  const locale = await getLocale();
+  const t = dict[locale].about;
   return (
     <section>
       <div className="container">
@@ -21,27 +12,27 @@ const AboutMe = () => {
           <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
             <div className="flex flex-col gap-4">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                Обо мне
+                {t.kicker}
               </p>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
-                Привет! Я Ярослав — UX/UI-дизайнер из Москвы, сейчас{" "}
+                {t.intro.before}
                 <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">
-                  создаю цифровые продукты
-                </span>{" "}
-                в <span className="border-b-2">WrapPixel</span> — SaaS-стартапе,
-                который занимается инструментами для продуктивности.
+                  {t.intro.highlight}
+                </span>
+                {t.intro.between}
+                <span className="border-b-2">{t.intro.company}</span>
+                {t.intro.after}
               </h2>
               <h5 className="text-secondary font-normal">
-                Раньше работал в Oak Studio, автор продуктов DesignKit и
-                MentalWell.
+                {t.previous}
               </h5>
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-sm text-primary uppercase font-medium">
-                Услуги
+                {t.services}
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-3">
-                {servicesBedge?.map((value, index) => {
+                {t.serviceBadges?.map((value, index) => {
                   return (
                     <Badge
                       variant={"outline"}

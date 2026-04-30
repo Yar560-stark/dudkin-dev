@@ -1,23 +1,9 @@
-"use client";
-import { useEffect, useState } from "react";
+import { getLocale } from "@/lib/get-locale";
+import { dict } from "@/lib/i18n";
 
-const Education = () => {
-  const [educationData, setEducationData] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("/api/page-data");
-        if (!res.ok) throw new Error("Failed to fetch");
-        const data = await res.json();
-        setEducationData(data?.educationData);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+const Education = async () => {
+  const locale = await getLocale();
+  const t = dict[locale].education;
 
   return (
     <section>
@@ -26,7 +12,7 @@ const Education = () => {
           <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
             <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                Образование
+                {t.kicker}
               </p>
             </div>
           </div>
@@ -36,11 +22,11 @@ const Education = () => {
               <div className="hidden sm:flex absolute left-5 sm:left-[15.9rem] sm:translate-x-1/2 top-0 bottom-0 w-px bg-primary/10" />
 
               <div className="relative">
-                {educationData?.map((item: any, index: any) => (
+                {t.items.map((item, index) => (
                   <div
                     key={index}
                     className={`relative flex flex-col sm:flex-row sm:items-start gap-4 ${
-                      index !== educationData.length - 1 ? "mb-8 sm:mb-16" : ""
+                      index !== t.items.length - 1 ? "mb-8 sm:mb-16" : ""
                     }`}
                   >
                     <div className="relative pl-8 sm:pl-0 sm:w-64 sm:text-right sm:pr-16">
