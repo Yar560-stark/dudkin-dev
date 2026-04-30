@@ -17,11 +17,11 @@ const AboutMe = async () => {
               <h2>{t.heading}</h2>
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-normal text-primary leading-snug">
                 {t.intro.before}
-                <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">
+                <span className="bg-brand/15 px-1 rounded">
                   {t.intro.highlight}
                 </span>
                 {t.intro.between}
-                <span className="border-b-2">{t.intro.company}</span>
+                <span className="border-b-2 border-brand">{t.intro.company}</span>
                 {t.intro.after}
               </p>
               <h5 className="text-secondary font-normal">

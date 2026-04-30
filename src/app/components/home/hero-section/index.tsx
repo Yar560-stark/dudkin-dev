@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { getLocale } from "@/lib/get-locale";
 import { dict } from "@/lib/i18n";
 
@@ -77,24 +76,21 @@ const HeroSection = async () => {
                     );
                   })}
                 </div>
-                <Button className="h-auto rounded-full p-0">
-                  <Link
-                    href="#contact"
-                    className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
-                  >
-                    <span className="flex items-center gap-3 bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-5 rounded-full">
-                      <Image
-                        src="/images/icon/spark-icon.svg"
-                        alt="spark-icon"
-                        width={14}
-                        height={14}
-                      />
-                      <span className="text-sm sm:text-base font-semibold text-white whitespace-nowrap">
-                        {t.hero.cta}
-                      </span>
-                    </span>
-                  </Link>
-                </Button>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-2.5 bg-brand hover:bg-brand/90 transition-colors py-3 px-5 rounded-full"
+                >
+                  <Image
+                    src="/images/icon/spark-icon.svg"
+                    alt=""
+                    width={14}
+                    height={14}
+                    className="brightness-0 invert"
+                  />
+                  <span className="text-sm sm:text-base font-semibold text-brand-foreground whitespace-nowrap">
+                    {t.hero.cta}
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

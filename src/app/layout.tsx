@@ -37,10 +37,11 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: locale === "ru" ? "ru_RU" : "en_US",
       images: [
         {
-          url: "/images/hero-sec/user-img.png",
-          width: 600,
-          height: 600,
-          alt: locale === "ru" ? "Ярослав Дудкин" : "Yaroslav Dudkin",
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: m.title,
+          type: "image/png",
         },
       ],
     },
@@ -48,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: m.title,
       description: m.description,
-      images: ["/images/hero-sec/user-img.png"],
+      images: ["/og-image.png"],
     },
     robots: {
       index: true,
