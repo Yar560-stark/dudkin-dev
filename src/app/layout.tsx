@@ -6,12 +6,13 @@ import Footer from "./components/layout/footer";
 
 const inter = Inter({
   variable: "--font-inter-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Typefolio",
-  description: "Typefolio - Nextjs Templates",
+  title: "Ярослав Дудкин — Senior UI/UX-дизайнер",
+  description: "Личный сайт Ярослава Дудкина: опыт, кейсы и проекты в области UI/UX-дизайна.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ru" suppressHydrationWarning>
       <body className={inter.className}>
         <Header/>
         {children}

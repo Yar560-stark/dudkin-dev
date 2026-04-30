@@ -29,13 +29,13 @@ const FeaturedWork = () => {
           <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
             <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                Featured work
+                Избранные работы
               </p>
               <Button
                 variant={"outline"}
                 className="h-auto py-3 px-5"
                 nativeButton={false}
-                render={<Link href={"/"}>Download Portfolio</Link>}
+                render={<Link href={"/"}>Скачать портфолио</Link>}
               />
             </div>
           </div>

@@ -46,9 +46,9 @@ const HeroSection = () => {
                 <span className="absolute bottom-2.5 right-5 w-4 h-4 bg-green-500 border-2 border-white rounded-full" />
               </div>
               <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
-                <h1>Elena Marsh</h1>
+                <h1>Ярослав Дудкин</h1>
                 <p className="text-violet-700 font-normal">
-                  Senior UI & UX Designer
+                  Senior UI/UX-дизайнер
                 </p>
                 <div className="flex items-center gap-2">
                   <Image
@@ -57,7 +57,7 @@ const HeroSection = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-primary">Brooklyn, NYC</p>
+                  <p className="text-primary">Москва, Россия</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-4">
@@ -92,7 +92,7 @@ const HeroSection = () => {
                         height={14}
                       />
                       <span className="text-sm sm:text-base font-semibold text-white">
-                        Get in touch
+                        Связаться
                       </span>
                     </span>
                   </Link>

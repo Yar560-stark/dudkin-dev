@@ -2,15 +2,15 @@ import { NextResponse } from "next/server";
 
 const featureWork = [
     {
-        title: "Branding + Web Design for Cleaning Services",
-        description: "Developed a modern brand identity and a responsive web experience tailored for a professional cleaning company, focused on clarity and usability.",
-        roles: ["UX Designer", "Framer Designer"],
+        title: "Брендинг и веб-дизайн для клининговой компании",
+        description: "Разработал современную айдентику и адаптивный сайт для профессиональной клининговой компании — с упором на ясность и удобство.",
+        roles: ["UX-дизайнер", "Framer-дизайнер"],
         image: "/images/feature-work/feature-img-1.png"
     },
     {
-        title: "Brand Identity for a Health Care Company",
-        description: "Created a distinctive visual identity and design language to build trust and empathy for a forward-thinking health care provider.",
-        roles: ["UX Designer", "Framer Designer"],
+        title: "Бренд-айдентика для медицинской компании",
+        description: "Создал визуальный язык, который вызывает доверие и эмпатию — для современной медицинской организации.",
+        roles: ["UX-дизайнер", "Framer-дизайнер"],
         image: "/images/feature-work/feature-img-2.png"
     }
 ]

@@ -3,45 +3,45 @@ import { NextResponse } from "next/server";
 const experienceData = [
     {
         icon: "/images/icon/tailwind-icon.svg",
-        role: "Product Designer, Tailwind",
-        location: "Remote",
+        role: "Продуктовый дизайнер, Tailwind",
+        location: "Удалённо",
         startYear: "2022",
-        endYear: "Present",
+        endYear: "по н. в.",
         bulletPoints: [
-            "Led end-to-end redesign of dashboard UI, improving user retention by 23%",
-            "Collaborated with engineers and product managers to ship features faster",
-            "Designed components used in a system adopted by 4+ internal teams"
+            "Провёл сквозной редизайн интерфейса дашборда — удержание пользователей выросло на 23%",
+            "Работал в связке с инженерами и продакт-менеджерами, ускорив выпуск фич",
+            "Спроектировал компоненты дизайн-системы, которую внедрили 4+ внутренние команды"
         ]
     },
     {
         icon: "/images/icon/asana-icon.svg",
-        role: "UI/UX Designer - Asana",
-        location: "New York, NY",
+        role: "UI/UX-дизайнер — Asana",
+        location: "Нью-Йорк, США",
         startYear: "2019",
         endYear: "2022",
         bulletPoints: [
-            "Created design systems for client projects across finance and healthcare",
-            "Conducted user testing and research to validate designs",
-            "Helped junior designers grow via mentorship"
+            "Создавал дизайн-системы для клиентских проектов в финтехе и медицине",
+            "Проводил пользовательские тесты и исследования для валидации решений",
+            "Помогал расти джуниор-дизайнерам как наставник"
         ]
     },
 ]
 
 const educationData = [
     {
-        date: "Sep 2015 - May 2019",
-        title: "B.F.A. in Graphic Design",
-        subtitle: "Pratt Institute — Brooklyn, NY"
+        date: "Сен 2015 — Май 2019",
+        title: "Бакалавр изящных искусств, графический дизайн",
+        subtitle: "Pratt Institute — Бруклин, Нью-Йорк"
     },
     {
-        date: "Mar 2021 - Aug 2021",
-        title: "UX Design Certificate",
-        subtitle: "Google UX Design - Coursera"
+        date: "Мар 2021 — Авг 2021",
+        title: "Сертификат по UX-дизайну",
+        subtitle: "Google UX Design — Coursera"
     },
     {
-        date: "Jan 2020 - Mar 2020",
-        title: "Front-End Web Development Bootcamp",
-        subtitle: "General Assembly — New York, NY"
+        date: "Янв 2020 — Мар 2020",
+        title: "Буткемп по фронтенд-разработке",
+        subtitle: "General Assembly — Нью-Йорк, США"
     }
 ];
 
@@ -54,8 +54,8 @@ const projectOverview = {
     sideProjects: [
         { name: "Formless", url: "#" },
         { name: "Gridsnap", comingSoon: true },
-        { name: "OrbitPay Mobile App", comingSoon: true },
-        { name: "Siteflow Page Builder", comingSoon: true },
+        { name: "OrbitPay — мобильное приложение", comingSoon: true },
+        { name: "Siteflow — конструктор страниц", comingSoon: true },
     ]
 };
 
