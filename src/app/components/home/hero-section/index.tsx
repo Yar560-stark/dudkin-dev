@@ -42,29 +42,23 @@ const HeroSection = async () => {
               <div className="absolute top-0 transform -translate-y-1/2">
                 <Image
                   src={"/images/hero-sec/user-img.png"}
-                  alt="user-img"
+                  alt={t.hero.kicker}
                   width={145}
                   height={145}
                   className="border-4 border-white rounded-full"
                 />
                 <span className="absolute bottom-2.5 right-5 w-4 h-4 bg-green-500 border-2 border-white rounded-full" />
               </div>
-              <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
-                <h1>{t.hero.name}</h1>
-                <p className="text-violet-700 font-normal">
-                  {t.hero.role}
+              <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start xs:text-left max-w-xl">
+                <p className="text-xs sm:text-sm tracking-[1.5px] text-secondary uppercase font-medium">
+                  {t.hero.kicker}
                 </p>
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={"/images/icon/map-icon.svg"}
-                    alt="map-icon"
-                    width={20}
-                    height={20}
-                  />
-                  <p className="text-primary">{t.hero.location}</p>
-                </div>
+                <h1 className="leading-tight">{t.hero.headline}</h1>
+                <p className="text-base sm:text-lg text-muted-foreground">
+                  {t.hero.subtitle}
+                </p>
               </div>
-              <div className="flex flex-col md:flex-row items-center gap-4">
+              <div className="flex flex-col md:flex-row items-center gap-4 shrink-0">
                 <div className="flex items-center gap-2">
                   {socialIcon?.map((value, index) => {
                     return (
@@ -85,7 +79,7 @@ const HeroSection = async () => {
                 </div>
                 <Button className="h-auto rounded-full p-0">
                   <Link
-                    href="#"
+                    href="#contact"
                     className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
                   >
                     <span className="flex items-center gap-3 bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-5 rounded-full">
@@ -95,7 +89,7 @@ const HeroSection = async () => {
                         width={14}
                         height={14}
                       />
-                      <span className="text-sm sm:text-base font-semibold text-white">
+                      <span className="text-sm sm:text-base font-semibold text-white whitespace-nowrap">
                         {t.hero.cta}
                       </span>
                     </span>

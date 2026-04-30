@@ -2,45 +2,51 @@ export type Locale = "ru" | "en";
 
 const ru = {
   meta: {
-    title: "Ярослав Дудкин — вайб-кодер",
+    title: "Разработка сайтов и мобильных приложений под ключ — Ярослав Дудкин",
     description:
-      "Личный сайт Ярослава Дудкина: вайб-кодер из Москвы, собираю продукты с нуля вместе с нейросетями. Кейсы: kitlin.ru, boltphone.ru.",
+      "Разработка сайтов и мобильных приложений под ключ. Лендинги, корпоративные сайты, веб-приложения с CRM, iOS-приложения. Полный цикл: дизайн, архитектура, код, деплой.",
   },
   hero: {
-    name: "Ярослав Дудкин",
-    role: "Вайб-кодер",
-    location: "Москва, Россия",
-    cta: "Связаться",
+    kicker: "Ярослав Дудкин · вайб-кодер · Москва",
+    headline: "Разработка сайтов и мобильных приложений под ключ",
+    subtitle:
+      "Сайты, CRM-системы и iOS-приложения — от идеи до деплоя. Полный цикл: дизайн, архитектура, frontend, бэкенд.",
+    cta: "Обсудить проект",
   },
   about: {
-    kicker: "Обо мне",
+    kicker: "Что я делаю",
+    heading: "Создание сайтов для бизнеса",
     intro: {
-      before: "Привет! Я Ярослав — вайб-кодер из Москвы. Уже 2 года ",
-      highlight: "собираю продукты с нуля",
-      between: " вместе с ",
-      company: "нейросетями",
-      after: " — от дизайна и архитектуры до кода и деплоя.",
+      before: "Разрабатываю сайты и мобильные приложения ",
+      highlight: "под ключ",
+      between: " — от простых лендингов до ",
+      company: "веб-приложений с CRM и iOS-приложений",
+      after:
+        " для сотрудников. Делаю всё сам: дизайн, архитектура, frontend, бэкенд, деплой — без команды на 5 человек.",
     },
     previous:
-      "Среди ключевых проектов — kitlin.ru и boltphone.ru. Параллельно делаю небольшие задачи на заказ.",
-    services: "Чем занимаюсь",
+      "Стек — Next.js, Supabase, Swift / SwiftUI. Параллельно беру небольшие задачи: создание сайтов для бизнеса, разработка лендингов, мини-приложения и интеграции.",
+    services: "Стек и направления",
     serviceBadges: [
-      "Веб-разработка",
-      "iOS-разработка",
-      "CRM-системы",
-      "UI-дизайн",
-      "Архитектура продуктов",
-      "Next.js",
-      "Swift / SwiftUI",
-      "Supabase",
+      "Разработка сайтов под ключ",
+      "Веб-приложения с CRM",
+      "Лендинги",
+      "iOS-приложения",
       "Telegram Mini Apps",
-      "Интеграции",
-      "Vibe-coding",
-      "AI-инструменты",
+      "Дизайн интерфейсов",
+      "Next.js · React",
+      "Supabase · PostgreSQL",
+      "Swift · SwiftUI",
+      "Интеграции и API",
+      "Деплой и инфраструктура",
+      "Vibe-coding с AI",
     ],
   },
   featuredWork: {
-    kicker: "Главные проекты",
+    kicker: "Кейсы",
+    heading: "Разработка мобильных приложений iOS и Android",
+    subheading:
+      "Помимо сайтов, делаю мобильные приложения с нуля. Ниже — комплексные кейсы, где в одной экосистеме собраны сайт, CRM-система и iOS-приложения для клиентов и сотрудников.",
     items: [
       {
         title: "kitlin.ru — экосистема для логистики из Китая",
@@ -58,108 +64,87 @@ const ru = {
       },
     ],
   },
-  experience: {
-    kicker: "Опыт",
-    items: [
+  pricing: {
+    kicker: "Стоимость",
+    heading: "Сколько стоит разработка сайта или приложения",
+    description:
+      "Цена зависит от объёма работ, сложности дизайна и инфраструктуры. Ниже — ориентир по типам проектов. Точную оценку и сроки дам после короткого разговора — обычно в день обращения.",
+    tiers: [
       {
-        icon: "/images/icon/spark-icon.svg",
-        role: "Вайб-кодер · самозанятый",
-        location: "Москва · удалённо",
-        startYear: "2024",
-        endYear: "по н. в.",
-        isPresent: true,
-        bulletPoints: [
-          "Собираю продукты с нуля вместе с нейросетями: от UI-дизайна и архитектуры до кода и деплоя",
-          "Запустил kitlin.ru — экосистему из веб-сайта, CRM и двух iOS-приложений (клиент + сканер для склада) за ~2 месяца",
-          "Запустил boltphone.ru — аналогичный набор: сайт, CRM и мобильные приложения",
-        ],
+        title: "Лендинг",
+        description:
+          "Одностраничный сайт с формой заявки и аналитикой. От нескольких дней работы.",
       },
       {
-        icon: "/images/icon/tailwind-icon.svg",
-        role: "Клиентские проекты",
-        location: "Удалённо",
-        startYear: "2024",
-        endYear: "по н. в.",
-        isPresent: true,
-        bulletPoints: [
-          "Реализую небольшие задачи на заказ: лендинги, мини-приложения, интеграции",
-          "Полный цикл — от ТЗ и дизайна до деплоя на VPS",
-        ],
+        title: "Корпоративный сайт или веб-приложение",
+        description:
+          "Многостраничный сайт или веб-приложение с CRM, авторизацией и базой данных. От 1 до 3 недель.",
+      },
+      {
+        title: "Мобильное приложение iOS",
+        description:
+          "Полноценное приложение под публикацию в App Store. От 1–2 месяцев в зависимости от объёма функций.",
       },
     ],
+    ctaTitle: "Напишите — обсудим задачу",
+    ctaSubtitle:
+      "Отвечаю обычно в течение часа в рабочее время. Расскажите коротко, что нужно — пришлю оценку и сроки.",
+    contacts: {
+      telegram: { label: "Telegram", href: "#" },
+      whatsapp: { label: "WhatsApp", href: "#" },
+      email: { label: "Email", href: "mailto:dudkinyaroslav02@gmail.com" },
+    },
   },
-  education: {
-    kicker: "Обучение",
-    items: [
-      {
-        date: "2024 — по н. в.",
-        title: "Vibe-coding с нейросетями",
-        subtitle: "Самообучение через AI, документацию и эксперименты",
-      },
-      {
-        date: "2022 — 2024",
-        title: "Frontend и UI-дизайн",
-        subtitle: "Самообучение через open-source и практику",
-      },
-    ],
-  },
-  projects: {
-    caseStudiesKicker: "Кейсы",
-    sideProjectsKicker: "Другие проекты",
-    comingSoon: "Скоро",
-    caseStudies: [
-      { name: "kitlin.ru", url: "https://kitlin.ru" },
-      { name: "boltphone.ru", url: "https://boltphone.ru" },
-    ],
-    sideProjects: [
-      { name: "Клиентские лендинги", url: "#", comingSoon: true },
-      { name: "Telegram mini-apps", url: "#", comingSoon: true },
-    ],
-  },
-  footer: "© 2026 Ярослав Дудкин",
+  footer: "© 2026 Ярослав Дудкин · разработка сайтов и приложений под ключ",
 };
 
 const en: typeof ru = {
   meta: {
-    title: "Yaroslav Dudkin — vibe-coder",
+    title: "End-to-end web and mobile development — Yaroslav Dudkin",
     description:
-      "Personal site of Yaroslav Dudkin: vibe-coder from Moscow, shipping products end-to-end with AI. Case studies: kitlin.ru, boltphone.ru.",
+      "End-to-end web and mobile development. Landing pages, corporate sites, web apps with CRM, iOS apps. Full cycle: design, architecture, code, deploy.",
   },
   hero: {
-    name: "Yaroslav Dudkin",
-    role: "Vibe-coder",
-    location: "Moscow, Russia",
-    cta: "Get in touch",
+    kicker: "Yaroslav Dudkin · vibe-coder · Moscow",
+    headline: "End-to-end web and mobile development",
+    subtitle:
+      "Websites, CRM systems and iOS apps — from idea to deploy. Full cycle: design, architecture, frontend, backend.",
+    cta: "Discuss your project",
   },
   about: {
-    kicker: "About Me",
+    kicker: "What I do",
+    heading: "Websites for business",
     intro: {
-      before: "Hey there. I'm Yaroslav — a vibe-coder from Moscow. For 2 years I've been ",
-      highlight: "shipping products from scratch",
-      between: " with ",
-      company: "AI as a partner",
-      after: " — from design and architecture to code and deploy.",
+      before: "I build websites and mobile apps ",
+      highlight: "end-to-end",
+      between: " — from simple landing pages to ",
+      company: "web apps with CRM and iOS apps",
+      after:
+        " for staff. I handle everything myself: design, architecture, frontend, backend, deploy — no team of five.",
     },
     previous:
-      "Key projects include kitlin.ru and boltphone.ru. Alongside that, I take on smaller client work.",
-    services: "What I do",
+      "Stack — Next.js, Supabase, Swift / SwiftUI. I also take on smaller jobs: business websites, landing pages, mini apps and integrations.",
+    services: "Stack and focus areas",
     serviceBadges: [
-      "Web Development",
-      "iOS Development",
-      "CRM Systems",
-      "UI Design",
-      "Product Architecture",
-      "Next.js",
-      "Swift / SwiftUI",
-      "Supabase",
+      "End-to-end websites",
+      "Web apps with CRM",
+      "Landing pages",
+      "iOS apps",
       "Telegram Mini Apps",
-      "Integrations",
-      "Vibe-coding",
-      "AI Tools",
+      "UI design",
+      "Next.js · React",
+      "Supabase · PostgreSQL",
+      "Swift · SwiftUI",
+      "Integrations and APIs",
+      "Deploy and infrastructure",
+      "Vibe-coding with AI",
     ],
   },
   featuredWork: {
-    kicker: "Featured Projects",
+    kicker: "Case Studies",
+    heading: "iOS and Android mobile app development",
+    subheading:
+      "Beyond websites, I build mobile apps from scratch. Below are full-stack case studies that bundle a website, CRM system and iOS apps for customers and staff into one ecosystem.",
     items: [
       {
         title: "kitlin.ru — China-Russia logistics ecosystem",
@@ -177,65 +162,38 @@ const en: typeof ru = {
       },
     ],
   },
-  experience: {
-    kicker: "Experience",
-    items: [
+  pricing: {
+    kicker: "Pricing",
+    heading: "How much does a website or app cost",
+    description:
+      "Pricing depends on scope, design complexity and infrastructure. Below is a rough guide by project type. I'll give a precise estimate and timeline after a short call — usually the same day.",
+    tiers: [
       {
-        icon: "/images/icon/spark-icon.svg",
-        role: "Vibe-coder · independent",
-        location: "Moscow · remote",
-        startYear: "2024",
-        endYear: "Present",
-        isPresent: true,
-        bulletPoints: [
-          "Ship products end-to-end with AI as a partner: UI design, architecture, code, deploy",
-          "Built kitlin.ru — an ecosystem of website, CRM and two iOS apps (customer + warehouse scanner) in ~2 months",
-          "Built boltphone.ru — the same blueprint: website, CRM, mobile apps",
-        ],
+        title: "Landing page",
+        description:
+          "Single-page website with a lead form and analytics. From a few days of work.",
       },
       {
-        icon: "/images/icon/tailwind-icon.svg",
-        role: "Client work",
-        location: "Remote",
-        startYear: "2024",
-        endYear: "Present",
-        isPresent: true,
-        bulletPoints: [
-          "Take on small client tasks: landing pages, mini apps, integrations",
-          "End-to-end ownership — from spec and design to VPS deploy",
-        ],
+        title: "Corporate site or web app",
+        description:
+          "Multi-page site or web app with CRM, auth and a database. From 1 to 3 weeks.",
+      },
+      {
+        title: "iOS mobile app",
+        description:
+          "Production-ready app for the App Store. From 1–2 months depending on scope.",
       },
     ],
+    ctaTitle: "Write me — let's discuss",
+    ctaSubtitle:
+      "I usually reply within an hour during work hours. Tell me briefly what you need — I'll send back an estimate and timeline.",
+    contacts: {
+      telegram: { label: "Telegram", href: "#" },
+      whatsapp: { label: "WhatsApp", href: "#" },
+      email: { label: "Email", href: "mailto:dudkinyaroslav02@gmail.com" },
+    },
   },
-  education: {
-    kicker: "Learning",
-    items: [
-      {
-        date: "2024 — Present",
-        title: "Vibe-coding with AI",
-        subtitle: "Self-taught through AI, documentation and experiments",
-      },
-      {
-        date: "2022 — 2024",
-        title: "Frontend and UI design",
-        subtitle: "Self-taught through open-source and practice",
-      },
-    ],
-  },
-  projects: {
-    caseStudiesKicker: "Case Studies",
-    sideProjectsKicker: "Other Projects",
-    comingSoon: "Coming Soon",
-    caseStudies: [
-      { name: "kitlin.ru", url: "https://kitlin.ru" },
-      { name: "boltphone.ru", url: "https://boltphone.ru" },
-    ],
-    sideProjects: [
-      { name: "Client landing pages", url: "#", comingSoon: true },
-      { name: "Telegram mini-apps", url: "#", comingSoon: true },
-    ],
-  },
-  footer: "© 2026 Yaroslav Dudkin",
+  footer: "© 2026 Yaroslav Dudkin · end-to-end web and mobile development",
 };
 
 export const dict = { ru, en };

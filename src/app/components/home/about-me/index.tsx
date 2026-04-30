@@ -14,7 +14,8 @@ const AboutMe = async () => {
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
                 {t.kicker}
               </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
+              <h2>{t.heading}</h2>
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] font-normal text-primary leading-snug">
                 {t.intro.before}
                 <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">
                   {t.intro.highlight}
@@ -22,7 +23,7 @@ const AboutMe = async () => {
                 {t.intro.between}
                 <span className="border-b-2">{t.intro.company}</span>
                 {t.intro.after}
-              </h2>
+              </p>
               <h5 className="text-secondary font-normal">
                 {t.previous}
               </h5>

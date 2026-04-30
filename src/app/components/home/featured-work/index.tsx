@@ -11,12 +11,14 @@ const FeaturedWork = async () => {
     <section>
       <div className="container">
         <div className="border-x border-border">
-          <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
-            <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
-              <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
-                {t.kicker}
-              </p>
-            </div>
+          <div className="flex flex-col gap-4 max-w-3xl mx-auto py-10 md:py-14 px-4 sm:px-7">
+            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
+              {t.kicker}
+            </p>
+            <h2>{t.heading}</h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl">
+              {t.subheading}
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 border-t border-border">
             {t.items.map((value, index) => {
@@ -30,7 +32,7 @@ const FeaturedWork = async () => {
                   <Link href={"/"} className="overflow-hidden">
                     <Image
                       src={value.image}
-                      alt="Image"
+                      alt={value.title}
                       width={490}
                       height={300}
                       className="w-full h-full group-hover:scale-105 transition-all duration-300 ease-in-out"
@@ -38,10 +40,17 @@ const FeaturedWork = async () => {
                   </Link>
                   <div className="flex flex-col gap-1 sm:gap-2 px-2">
                     <Link href={"/"}>
-                      <h4>{value.title}</h4>
+                      <h3 className="text-xl sm:text-2xl font-medium text-primary">
+                        {value.title}
+                      </h3>
                     </Link>
-                    <div className="flex">
-                      <p>{value.roles.join(", ")}</p>
+                    <p className="text-base text-muted-foreground">
+                      {value.description}
+                    </p>
+                    <div className="flex pt-1">
+                      <p className="text-sm text-secondary">
+                        {value.roles.join(" · ")}
+                      </p>
                     </div>
                   </div>
                 </div>
