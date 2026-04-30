@@ -38,7 +38,7 @@ const Pricing = async () => {
             })}
           </div>
 
-          <div className="border-t border-border bg-brand/5">
+          <div className="border-t border-border bg-[linear-gradient(180deg,_rgba(146,130,248,0.06)_0%,_rgba(243,202,77,0.06)_100%)]">
             <div className="flex flex-col gap-6 max-w-3xl mx-auto px-4 sm:px-7 py-12 md:py-16 text-center items-center">
               <h3 className="text-2xl sm:text-3xl font-medium text-primary max-w-xl">
                 {t.ctaTitle}
@@ -50,7 +50,7 @@ const Pricing = async () => {
                 <Link
                   href={t.contacts.telegram.href}
                   target="_blank"
-                  className="inline-flex items-center gap-2 py-2.5 px-5 bg-brand text-brand-foreground rounded-full text-sm sm:text-base font-medium hover:bg-brand/90 transition-colors"
+                  className="inline-flex items-center gap-2 py-2.5 px-5 bg-primary text-white rounded-full text-sm sm:text-base font-medium hover:opacity-90 transition-opacity"
                 >
                   {t.contacts.telegram.label}
                 </Link>

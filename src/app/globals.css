@@ -5,8 +5,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-brand: var(--brand);
-  --color-brand-foreground: var(--brand-foreground);
   --color-background: var(--background);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -97,11 +95,6 @@ body {
 }
 
 :root {
-  /* Brand accent — единая точка управления цветом бренда.
-     Меняется здесь — обновляется по всему сайту. */
-  --brand: #4D7BFF;
-  --brand-foreground: #FFFFFF;
-
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -137,8 +130,6 @@ body {
 }
 
 .dark {
-  --brand: #4D7BFF;
-  --brand-foreground: #FFFFFF;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
